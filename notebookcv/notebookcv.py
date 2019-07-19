@@ -5,6 +5,6 @@ def convert(my_name):
     :return: None
     """
     try:
-        print(f"I will convert a notebook for you some day, {str(my_name)}.")
+        print(f"I will convert a notebook for you some day, don't worry {str(my_name)}.")
     except TypeError:
         print('Caught TypeError Exception')
