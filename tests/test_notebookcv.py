@@ -29,3 +29,10 @@ def test_convert_dict(capsys):
     notebookcv.convert({'name': 'test'})
     captured = capsys.readouterr()
     assert "test" in captured.out
+
+
+def test_convert_float(capsys):
+    """Verify if input a dict"""
+    notebookcv.convert(4.4)
+    captured = capsys.readouterr()
+    assert "4.4" in captured.out
