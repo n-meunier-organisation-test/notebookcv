@@ -4,5 +4,7 @@ def convert(my_name):
     :param my_name: str: person's name
     :return: None
     """
-
-    print(f"I'll convert a notebook for you some day, {my_name}.")
+    try:
+        print(f"I'll convert a notebook for you some day, {str(my_name)}.")
+    except TypeError:
+        print('Caught TypeError Exception')
